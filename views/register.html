@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <div class="jumbotron jumbo">
+               <form name="myform" ng-submit="register()" novalidate>
+                    <div class="textintro">
+                        <h2>Register !!!</h2>
+                        <p class="message" ng-show="message">{{message}}</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Firstname:</label>
+                        <input type="text" name="firstname" class="form-control" placeholder="First Name" ng-model="user.firstname" ng-required="true">
+                        <p class="error validationerror" ng-show="myform.firstname.$invalid && myform.firstname.$touched">*required</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Lastname:</label>
+                        <input type="text" name="lastname" class="form-control" placeholder="Last Name" ng-model="user.lastname" ng-required="true">
+                        <p class="error validationerror" ng-show="myform.lastname.$invalid && myform.lastname .$touched">*required</p>
+                    </div>
+                    <div class="form-group">
+                         <label>Email id:</label>
+                        <input type="email" name="email" class="form-control" placeholder="Email" ng-model="user.email" ng-required="true">
+                        <p class="error validationerror" ng-show="myform.email.$invalid && myform.email .$touched">*required</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Password:</label>
+                        <input type="password" name="password" class="form-control" placeholder="Password" ng-model="user.password" ng-required="true">
+                        <p class="error validationerror" ng-show="myform.password.$invalid && myform.password .$touched">*required</p>
+                    </div>
+                    <div class="click">
+                        <button type="submit" class="btn btn-primary btn-lg" ng-disabled="myform.$invalid">Register</button>
+                        <button class="btn btn-default btn-lg"><a href="#/login">login</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="col-lg-3"></div>
+</div>
