@@ -2,12 +2,11 @@
     <div class="col-lg-3"></div>
         <div class="col-lg-6">
             <div class="jumbotron jumbo">
-                <form class="vivek" name="myform" ng-submit="login()" novalidate>
+                <form name="myform" ng-submit="login()" novalidate>
                     <div class="textintro">
-                        <h2>Welcome !!!</h2>
-                        <p>Log-in to access the Website!</p>
-                        <p class="message" ng-show="message">{{message}}</p>
+                        <h2>Login</h2>
                     </div>
+                    <hr>
                     <div class="form-group">
                         <label>Email id:</label>
                         <input type="email" name="email" class="form-control" placeholder="Email" ng-model="user.email" ng-required="true">

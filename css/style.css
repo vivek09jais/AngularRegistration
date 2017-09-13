@@ -7,9 +7,14 @@ body  {
     border-radius: 30px;
     background: #aaaaaa!important;
   }
-.textintro{
+.textintro {
   text-align: center;
 }
+.textintro h2{
+  text-align: center;
+  margin-top: -5px !important;
+}
+
 .error{
   color: red;
 }

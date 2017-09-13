@@ -4,9 +4,10 @@
             <div class="jumbotron jumbo">
                <form name="myform" ng-submit="register()" novalidate>
                     <div class="textintro">
-                        <h2>Register !!!</h2>
-                        <p class="message" ng-show="message">{{message}}</p>
+                        <h2>Register</h2>
+                        <!-- <p class="message" ng-show="message">{{message}}</p> -->
                     </div>
+                    <hr>
                     <div class="form-group">
                         <label>Firstname:</label>
                         <input type="text" name="firstname" class="form-control" placeholder="First Name" ng-model="user.firstname" ng-required="true">
